@@ -1,0 +1,115 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='css/style.css')
+  link(rel='icon' href='favicon.ico' type='images/x-icon')
+  title ЗооStore.
+
+.top-id.center
+  // Head-top-menu
+  header
+    .header
+      a(href='index')
+        p.header__logo-text ЗооStore.
+      // <a href="index"><img class="phone__logo" src="img/logo.png" alt=""></a>
+      input.header__input(type='text' placeholder='Пошук')
+      nav
+        a.header__link(href='catalog') Каталог
+        a.header__link(href='basket') Кошик
+    .phone
+      .phone__menu
+        a(href='index')
+          p.header__logo-text ЗооStore.
+        .phone__box
+          a(href='#')
+            img.phone__img(src='../img/f.png' alt='')
+          a(href='catalog')
+            img.phone__img(src='../img/fff.png' alt='')
+          a(href='basket')
+            img.phone__img(src='../img/ff.png' alt='')
+  // Head-top-menu
+  // Head-under-text
+  section
+    .Under-text
+      h1.Under-text__H1 Тільки найкраще для вашого улюбленця
+      p.Under-text__p Життів то дев'ять, але здоров'я одне!
+      a.Under-text__a.Under-text__catalog(href='catalog') Перейти до каталогу
+// Head-under-text
+
+.center.block
+  div
+    ul.block-pack__ul
+      a.block-pack__li(href='index') Головна
+      a.block-pack__li(href='catalog') Каталог товарів
+      a.block-pack__li(href="#") Сторінка товару 
+  .block__images 
+    a(href='basket')
+      img(src="../img/cart.png", alt="")
+.center.block-swap
+  .block__images
+    a(href='catalog')
+      img(src="../img/category.png", alt="")
+  .block__images 
+    a(href='basket')
+      img(src="../img/cart.png", alt="")
+.price__cost-main      
+
+.center
+  .goods-box
+    .goods-box__img
+      img(
+        src="img/"+goods[0]['image']
+        class="goods-big-image"
+        )
+    .goods-box__info
+      h2 #{goods[0]['name']}
+      p #{goods[0]['description']}
+      .price__button
+        .price__cost 
+          .price__cost-main
+            span(class="success") Ціна: #{goods[0]['cost']} ₴
+      .goods-box__button
+        button(
+          class="button-success add-to-cart"
+        data-goods_id=goods[0]['id']
+      ) До кошику
+
+// footer
+footer
+  .center
+    .footer
+      .footer__logo
+        // <img class="footer__logo" src="img/logob.png" alt="">
+        a(href='index')
+          p.footer__logo ЗооStore.
+      .footer__block
+        h4 Меню
+        .footer__downbar
+          a(href='index') Головна
+          a(href='catalog') Каталог
+          a(href='basket') Кошик
+      .footer__block
+        h4 Контакти
+        .footer__downbar
+          a(href='#') +380-989-733-788
+          a(href='https://www.google.com/search?q=help%40interier.com&oq=help%40interier.com&aqs=chrome..69i57j69i58.714j0j7&sourceid=chrome&ie=UTF-8') grinpis01@gmail.com
+          .footer__block-links
+            a(href='https://www.facebook.com/')
+              img(src='../img/facebook.svg' alt='facebook')
+            a(href='https://www.instagram.com/')
+              img(src='../img/inst.svg' alt='instagram')
+            a(href='https://twitter.com/?lang=ru')
+              img(src='../img/twitter.svg' alt='twitter')
+      .footer__block.footer__button
+        p.footer__text-p Отримуйте наші новини та оновлення
+        input(type='email' placeholder='Введіть пошту')
+        button Підписатися
+// footer

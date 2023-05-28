@@ -1,0 +1,61 @@
+.Mebel{
+
+
+    &__for{
+        display: grid;
+        gap: $gap;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    &__style-h2{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        color: $color-text-black;
+        margin-bottom: $gap;
+        margin-top: 10px;
+      }
+
+    &__foto{
+        height: 415px;
+        grid-column: span 4;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 41px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: $color-text;
+
+        &-big{
+            grid-column: span 6;
+          }
+
+        &-0{
+            background-image: url('../img/Mb.png');
+            background-repeat: no-repeat;
+         }
+    
+        &-1{
+            background-image: url('../img/Mb1.png');
+            background-repeat: no-repeat;
+         }
+    
+        &-2{
+            background-image: url('../img/Mb2.png');
+            background-repeat: no-repeat;
+         }
+    
+        &-3{
+            background-image: url('../img/Mb3.png');
+            background-repeat: no-repeat;
+         }
+    
+         &-4{
+            background-image: url('../img/Mb4.png');
+            background-repeat: no-repeat;
+         }
+
+    } 
+}

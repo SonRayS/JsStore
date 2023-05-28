@@ -1,0 +1,766 @@
+@media (max-width: 766px){
+    
+    .center{
+        padding-left: calc(50% - 158px);
+        padding-right: calc(50% - 158px);
+
+    }
+
+    .header{
+        display: none;
+    }
+
+    .goods-box__info {
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 0px;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .goods-box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .phone__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .header__logo-text{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+    .cart__info p {
+        width: 246px;
+    }
+    
+    .header-catalog{
+        display: none;
+    }
+
+    .phone-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Under-text__H1{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 82px;
+    }
+
+    .phone{
+        padding-top: $gap;
+      }
+      
+      
+      .phone__img{
+        width: 16px;
+        height: 16px;
+        margin-left: $gap;
+      }
+      
+      
+
+      .Under-text__p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: $gap;
+        text-align: center;
+      }
+
+      .Under-text__a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        border: none;
+     }
+
+     .Under-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .Mebel__style-h2{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+     }
+
+     .Mebel__for{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+     }
+    
+     .Mebel__foto{
+        grid-column: span 4;
+        height: 375px;
+        font-size: 28px;
+        line-height: 34px;
+        width: 342.93px;
+        height: 349.33px;
+     }
+     
+     .products__style-h2{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+     }
+
+
+     .products__box {
+        width: 378.6666666667px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .H2-style{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: black;
+    }
+
+    .text-p2{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        margin-bottom: 12px;
+        margin-top: 8px;
+    }
+
+    .price__sell{
+        
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration-line: line-through;
+        color: #888888;
+    }
+
+    .price__box{
+        
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #050505;
+    }
+
+    .catalog-box__items {
+        width: 342.93px;
+        height: 349.33px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .select{
+        margin-bottom: $gap;
+    }
+
+    .menu_catalog_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 38px;
+        grid-column-gap: 28px;
+    }
+
+    .footer__button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .footer {
+        display: flex;
+        box-sizing: border-box;
+        padding-top: $gap;
+        padding-bottom: $gap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        gap: 34px;
+    }
+
+    .block {
+        display: none;
+    }
+
+    .select{
+        margin-bottom: $gap;
+    }
+
+    .block-swap {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: $gap;
+    }
+    
+    .menu_catalog_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 38px;
+        grid-column-gap: 28px;
+    }
+
+    .products__box {
+        width: 342.93px;
+        height: 349.33px;
+    }
+
+    .cart__button{
+        display: flex;
+        justify-content: space-between;
+    
+        & button{
+            width: 164px;
+        }    
+    }
+  
+    .products {
+        margin-top: 16px;
+        margin-bottom: $gap;
+    }
+
+    .cart__form {
+        height: 556px;
+        background: #F7F6F6;
+        border-radius: 20px;
+        grid-column: span 8;
+        margin-top: $gap;
+        margin-bottom: 14px;
+    }
+
+    .product-content1 {
+        display: flex;
+        gap: $gap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products h2{
+        margin-top: $gap;
+    }
+
+    .Mebel__foto-big{
+        height: 244px;
+    }
+
+    .menu-drop {
+        width: 288px;
+        height: 41px;
+        border: 1px solid #C4C4C4;
+        border-radius: 20px;
+        margin-bottom: $gap;
+    }
+
+      .menu1:hover .menu_drop{
+        opacity: 1;
+        padding-top: 280px;
+      }  
+
+      .product-catalog__items {
+        width: 342px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart__imgs{
+        display: none;
+    }
+
+    .products__sell {
+        display: flex;
+        gap: 32px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        -moz-column-gap: 28px;
+        column-gap: 28px;
+        row-gap: 39px;
+    }
+
+    .products__sell-basket {
+        display: flex;
+        gap: 32px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        -moz-column-gap: 28px;
+        column-gap: 28px;
+        row-gap: 39px;
+    }
+}
+
+@media (min-width: 343px) and (max-width: 428px){
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .products__box {
+        width: 342px;
+    }
+
+    .header-catalog{
+        display: none;
+    }
+
+    
+    .block {
+        display: none;
+    }
+
+    .phone__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .phone-menu{
+        display: flex;
+    }
+
+    .product_img {
+        width: 290.93px;
+        height: 226.21px;
+    }
+
+    .Under_header_text{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 82px;
+    }
+    .phone{
+        padding-top: $gap;
+      }
+      
+      .phone-img{
+        width: 16px;
+        height: 16px;
+        margin-left: $gap;
+      }
+      
+      .header-logo-swap{
+        width: 99px;
+      }
+    
+      .p-style{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: $gap;
+        text-align: center;
+      }
+
+    .a_style_type3 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        border: none;
+     }
+
+     .Under__text-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .h_style_type_1{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+     }
+
+     .for{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+     }
+    
+     .Mebel_foto{
+        grid-column: span 4;
+        height: 375px;
+        font-size: 28px;
+        line-height: 34px;
+     }
+
+     .Mebel_foto_big{
+        height: 244px;
+     }
+
+     .div_product{
+        width: 342.93px;
+        height: 349.33px;
+    }
+
+
+    .hh3{
+        
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hh_style_type_2{
+        
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-text-black;
+    }
+
+    .price__sell{
+        
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration-line: line-through;
+        color: #888888;
+    }
+
+    .price__box{
+        
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #050505;
+    }
+
+    .footer-position{
+        gap: 34px;
+        flex-wrap: wrap;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .product-content{
+        row-gap: 36px;
+    }
+    /*next*/
+
+    .select{
+        margin-bottom: $gap;
+    }
+
+    .menu_catalog_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 38px;
+        grid-column-gap: 28px;
+    }
+    
+    .block-pack {
+        display: flex;
+        flex-direction: column;
+    }
+    /*next*/
+
+    .cart__imgs{
+        display: none;
+    }
+
+    .cart-button{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cart-button button{
+        width: 163px;
+        height: 37px;
+    }
+
+    .cart-form {
+        height: 556px;
+        background: #F7F6F6;
+        border-radius: 20px;
+        grid-column: span 8;
+        margin-top: $gap;
+        margin-bottom: $gap;
+    }
+
+
+    .product:hover {
+        transform: scale(1.02);
+        transition: all 0.4s;
+        box-shadow: 0 0 5px 1px darkolivegreen;
+    }
+    
+}
+
+
+@media (max-width: 342px){
+
+    .center {
+        padding-left: calc(50% - 128px);
+        padding-right: calc(50% - 128px);
+    }
+
+
+    .cart__info p {
+        width: 156px;
+    }
+
+    
+    
+    .block {
+        display: none;
+    }
+    
+    .catalog-box__items {
+        width: 260px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .Mebel__foto {
+        grid-column: span 4;
+        height: 375px;
+        font-size: 28px;
+        line-height: 34px;
+        width: 256px;
+    }
+
+    .Mebel__foto-big{
+        height: 244px;
+    }
+
+    .cart__head{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .cart__on {
+       width: 220px;
+    }
+
+    .cart__on-text {
+        display: block;
+        width: 300px;
+     }
+     
+    .cart__aad-on{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-p2{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    
+    .product {
+        font-weight: 400;
+    }
+
+    .cart__info .H4-style{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .standard-select {
+        box-sizing: border-box;
+        width: 258px;
+        height: 41px;
+        padding-left: 10px;
+        outline: none;
+        border-radius: 20px;
+    }
+
+    .Under-text__H1 {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 82px;
+    }
+
+    .link-catalog__text{
+       margin-left: 0.01vh;
+    }
+
+    .product-catalog__items {
+        width: 256px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-drop {
+        width: 256px;
+        height: 41px;
+        border: 1px solid #C4C4C4;
+        border-radius: 20px;
+        margin-bottom: 32px;
+    }
+
+    .phone__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-catalog {
+        display: flex;
+        gap: 32px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 48px;
+    }
+
+    .products__sell {
+        display: flex;
+        gap: 32px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        -moz-column-gap: 28px;
+        column-gap: 28px;
+        row-gap: 39px;
+    }
+
+    .products__box {
+        width: 260px;
+        height: 330px;
+    }
+
+    .cart__link-box{
+        display: flex;
+    }
+
+
+
+    footer .footer__text-p {
+        font-size: 13px;
+        line-height: 16px;
+        color: black;
+        margin-bottom: 16px;
+    }
+
+    .side {
+        width: 264px;
+        height: 41px;
+        border: 1px solid #C4C4C4;
+        border-radius: 20px;
+        margin-bottom: $gap;
+    }
+
+    .menu-drop__box a{
+        background-color: $color-text;
+        padding: 10px;
+        border-left: 2px solid $color-text-black;
+        border-right: 2px solid $color-text-black;
+        border-top: 0.1px solid #C4C4C4;
+        border-bottom: 0.1px solid #C4C4C4;
+        width: 220px;
+      }
+
+      .catalog-box {
+        -moz-column-gap: 28px;
+        column-gap: 1px;
+        row-gap: 39px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+      .menu-drop__ul:hover .menu-drop__box{
+        opacity: 1;
+        padding-top: 330px;
+        width: 260px;
+      }
+
+      footer {
+        background: #F7F6F6;
+        margin-top: 64px;
+        width: 342px;
+    }
+
+    footer .footer button {
+        width: 255px;
+    }
+
+    footer .footer input {
+        width: 255px;
+    }
+
+
+
+    footer .footer {
+        display: flex;
+        box-sizing: border-box;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        gap: 2px;
+        row-gap:24px;
+    }
+
+}

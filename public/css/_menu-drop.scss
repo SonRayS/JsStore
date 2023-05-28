@@ -1,0 +1,115 @@
+/*menuuuuuuuuuuuuuu-scroll=========================================================================================================*/
+
+.menu-drop {
+    width: 288px;
+    height: 41px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+
+    &__cost{
+        color: $color-text-black;
+        display: flex;
+        list-style-type: none;
+      }
+     
+      &__list{
+        box-sizing: border-box;
+        padding-top:10px;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-around;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    
+      &__box {
+        position: absolute;
+        opacity: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        list-style-type: none;
+      }
+    
+      &__box a:hover{
+        background-color: $color-text-black;
+        color: #ffffff;
+      }
+    
+      &__box a{
+        background-color: $color-text;
+        padding: 10px;
+        border-left: 2px solid $color-text-black;
+        border-right: 2px solid $color-text-black;
+        border-top: 0.1px solid #C4C4C4;
+        border-bottom: 0.1px solid #C4C4C4;
+        width: 248px;
+      }
+     
+      &__box:active{
+        display: none;
+      }
+    
+      &__ul:hover &__box{
+        opacity: 1;
+        padding-top: 280px;
+      }
+    
+    /* угол выпадающего списка */
+
+        &__ul li:first-child &__cost-1{
+        border-radius: 10px 10px 0 0;
+      }
+        &__ul li:last-child &__cost-4{
+        border-radius: 0 0 10px 10px;
+      }
+
+    /* угол выпадающего списка */
+    
+}
+
+/*menuuuuuuuuuuuuuu-scroll============================================================================================================================================*/
+/* bread crumbs */
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    &-pack__ul{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: $gap;
+        color: $color-text-black;
+        list-style-type: none;
+        margin-bottom: 41px;
+        display: flex;
+        }
+
+
+    &-pack__li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: $gap;
+      color: $color-text-black;
+    }    
+
+    &-pack__li:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      
+
+  }
+
+/* bread crumbs */    
+    
+  
+   
+
+    

@@ -1,0 +1,36 @@
+.products{
+    margin-top: 64px;
+
+    &__sell{
+        display: flex;
+        gap: $gap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        -moz-column-gap: 28px;
+        column-gap: 28px;
+        row-gap: 39px;
+      }
+    
+      &__style-h2{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        color: $color-text-black;
+        margin-bottom: $gap;
+        margin-top: 10px;
+      }
+
+      &__box {
+        width: 378px;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+
+  }
+
+  .Special-sell{
+    margin-top: $gap;
+  }

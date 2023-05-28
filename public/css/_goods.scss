@@ -1,0 +1,104 @@
+.top-id{
+    height: 735px;
+    background-image: url("../img/id.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 64px;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav{
+    padding-right: 12px;
+}
+
+.goods-box{
+
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 6%;
+
+    &__img{
+        padding: 10px;
+    }
+
+    &__info{
+        display: flex; 
+        max-width: 500px;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 64px;
+    }
+
+    &__button button{
+        box-sizing: border-box;
+        width: 200px;
+        height: 37px;
+        left: 121px;
+        top: 983px;
+        border: 1px solid $color-text-black;
+        border-radius: 50px;
+        background-color: $color-text;
+    }
+
+    &__button button:hover{
+        background-color: $color-text-black;
+    } 
+       
+}
+
+.price__button button{
+    box-sizing: border-box;
+    width: 75px;
+    height: 30px;
+    border: 1px solid $color-text-black;
+    border-radius: 25px;
+    background-color: $color-text;
+}
+
+.price__button button:hover{
+    background-color: $color-text-black;
+} 
+
+.price__cost {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 30px;
+}
+
+.price__cost-main{
+   
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #050505;
+      
+}
+
+.price__cost-sell{
+   
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-decoration-line: line-through;
+        color: #888888;
+      
+}
+
+.block__images img{
+    width: 52px;
+    height: 52px;
+}
+
+.block__images img:hover{
+    -webkit-animation: jello-horizontal 2s both;
+    animation: jello-horizontal 2s both;
+    }

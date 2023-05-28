@@ -1,0 +1,137 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='css/style.css')
+  link(rel='icon' href='favicon.ico' type='images/x-icon')
+  title ЗооStore.
+.top-basket.center
+  // Head-top-menu
+  header
+    .header
+      a(href='index')
+        p.header__logo-text ЗооStore.
+      // <a href="index"><img class="phone__logo" src="img/logo.png" alt=""></a>
+      input.header__input(type='text' placeholder='Пошук')
+      nav
+        a.header__link(href='catalog') Каталог
+        a.header__link(href='order') Кошик
+    .phone
+      .phone__menu
+        a(href='index')
+          p.header__logo-text ЗооStore.
+        .phone__box
+          a(href='#')
+            img.phone__img(src='../img/f.png' alt='')
+          a(href='catalog')
+            img.phone__img(src='../img/fff.png' alt='')
+          a(href='order')
+            img.phone__img(src='../img/ff.png' alt='')
+  // Head-top-menu
+  // Head-under-text
+  section
+    .Under-text
+      h1.Under-text__H1 &Kcy;&ocy;&shcy;&icy;&kcy;
+// Head-under-text
+// BASKET
+
+.center.cart-move 
+  .cart__display-interface  
+    h2(class="cart-headers") Кошик :
+    div(class=".category-list")
+      div(id="card-nav")
+
+  .cart__display-interface.cart__input-date.center
+    h2.cart__head Оформлення замовлення
+      .cart__head-move
+                  form#lite-shop-order(action="")
+                            div(class='form-control')
+                              label(for='username') 
+                              input(
+                                  type='text',
+                                  id='username',
+                                  placeholder="Ім'я",
+                                  )
+                            div(class='form-control')
+                              label(for='phone') 
+                              input(
+                                  type='text',
+                                  id='phone',
+                                  placeholder='Телефон',
+                                  )
+                            div(class='form-control')
+                              label(for='email') 
+                              input(
+                                  type='text',
+                                  id='email',
+                                  placeholder='Пошта',
+                                  )
+                            div(class='form-control form-controls')
+                              label(for='address')  
+                              input(
+                                  type='text',
+                                  id='address',
+                                  placeholder='Адреса',
+                                  )
+                            div(class='form-control')
+                              label(for='rule') 
+                                input(
+                                    type='checkbox',
+                                    id='rule',
+                                    value='1'
+                                    ) 
+                                span  Правила та умови
+                            div(class='form-control text-rights')
+                              button(class='button-primary', type='submit') Замур-рчательний вибір
+                           
+// Supecial-sells
+.center
+  .link-catalog__text
+    a.link-catalog__text(href='catalog') &Pcy;&iecy;&rcy;&iecy;&jcy;&tcy;&icy; &dcy;&ocy; &kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy;&ucy;
+
+script(src='js/card.js')
+script(src='js/nav.js')
+script(src='js/order.js')
+script(src="https://kit.fontawesome.com/0748402994.js" crossorigin="anonymous")
+script(src='https://cdn.jsdelivr.net/npm/sweetalert2@8')
+
+// footer
+footer
+  .center
+    .footer
+      .footer__logo
+        // <img class="footer__logo" src="img/logob.png" alt="">
+        a(href='index')
+          p.footer__logo ЗооStore.
+      .footer__block
+        h4 Меню
+        .footer__downbar
+          a(href='index') Головна
+          a(href='catalog') Каталог
+          a(href='order') Кошик
+      .footer__block
+        h4 Контакти
+        .footer__downbar
+          a(href='#') +380-989-733-788
+          a(href='https://www.google.com/search?q=help%40interier.com&oq=help%40interier.com&aqs=chrome..69i57j69i58.714j0j7&sourceid=chrome&ie=UTF-8') grinpis01@gmail.com
+          .footer__block-links
+            a(href='https://www.facebook.com/')
+              img(src='../img/facebook.svg' alt='facebook')
+            a(href='https://www.instagram.com/')
+              img(src='../img/inst.svg' alt='instagram')
+            a(href='https://twitter.com/?lang=ru')
+              img(src='../img/twitter.svg' alt='twitter')
+      .footer__block.footer__button
+        p.footer__text-p Отримуйте наші новини та оновлення
+        input(type='email' placeholder='Введіть пошту')
+        button Підписатися
+
+
+// footer

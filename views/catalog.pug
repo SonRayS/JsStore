@@ -1,0 +1,150 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='css/style.css')
+  link(rel='icon' href='favicon.ico' type='images/x-icon')
+  title ЗооStore.
+.top-catalog.center
+  // Head-top-menu
+  header
+  
+    .header
+      a(href='index')
+        p.header__logo-text ЗооStore.
+      // <a href="index"><img class="phone__logo" src="img/logo.png" alt=""></a>
+      input.header__input(type='text' placeholder='Пошук')
+      nav
+        a.header__link(href='catalog') Каталог
+        a.header__link(href='order') Кошик
+    .phone
+      .phone__menu
+        a(href='index')
+          p.header__logo-text ЗооStore.
+        .phone__box
+          a(href='#')
+            img.phone__img(src='../img/f.png' alt='')
+          a(href='catalog')
+            img.phone__img(src='../img/fff.png' alt='')
+          a(href='order')
+            img.phone__img(src='../img/ff.png' alt='')
+  // Head-top-menu
+  // Head-under-text
+  section
+    .Under-text
+      h1.Under-text__H1 &Kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy;
+// Head-under-text
+// Catalog-menu
+.block.center
+  div
+    ul.block-pack__ul
+      a.block-pack__li(href='index') &Gcy;&ocy;&lcy;&ocy;&vcy;&ncy;&acy;
+      a.block-pack__li(href='catalog') &Kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy; &tcy;&ocy;&vcy;&acy;&rcy;&iukcy;&vcy;
+  .menu-drop
+    ul.menu-drop__ul
+      li.menu-drop__list
+        a.menu-drop__a.menu-drop__cost(href='#')
+          p &Scy;&ocy;&rcy;&tcy;&ucy;&vcy;&acy;&tcy;&icy; &zcy;&acy; :
+        img.menu-drop__img(src='../img/Polygon1.png' alt='')
+        ul.menu-drop__box
+          li
+            a.menu-drop__cost.menu-drop__cost-1(href='#') &Pcy;&ocy;&rcy;&yacy;&dcy;&ocy;&kcy;: &scy;&pcy;&iecy;&rcy;&shcy;&ucy; &ncy;&ocy;&vcy;&iukcy;
+          li
+            a.menu-drop__cost.menu-drop__cost-2(href='#') &Pcy;&ocy;&rcy;&yacy;&dcy;&ocy;&kcy;: &scy;&pcy;&iecy;&rcy;&shcy;&ucy; &zcy;&ncy;&icy;&zhcy;&kcy;&icy;
+          li
+            a.menu-drop__cost.menu-drop__cost-3(href='#') &Pcy;&ocy;&rcy;&yacy;&dcy;&ocy;&kcy;: &scy;&pcy;&iecy;&rcy;&shcy;&ucy; &dcy;&iecy;&shcy;&iecy;&vcy;&iukcy;
+          li
+            a.menu-drop__cost.menu-drop__cost-4(href='#') &Pcy;&ocy;&rcy;&yacy;&dcy;&ocy;&kcy;: &scy;&pcy;&iecy;&rcy;&shcy;&ucy; &pcy;&ocy;&pcy;&ucy;&lcy;&yacy;&rcy;&ncy;&iukcy;
+
+button(class="show-nav" id="myBtn")
+  a(href='#' class='show-nav')
+    img(src='../img/chevron.png' alt='') 
+  
+include nav.pug
+
+// Catalog-menu     
+.center.Mebel__style-h2
+  h4#FEED #{korm[0]['category']}    
+  .product-catalog.center 
+    each val, index in korm
+      include card.pug
+
+.center.Mebel__style-h2
+  h4#play #{game[0]['category']}    
+  .product-catalog.center 
+    each val, index in game
+      include card.pug
+
+.center.Mebel__style-h2
+  h4#home #{homes[0]['category']}    
+  .product-catalog.center 
+    each val, index in homes
+      include card.pug
+
+.center.Mebel__style-h2
+  h4#Sunbeds #{bed[0]['category']}    
+  .product-catalog.center 
+    each val, index in bed
+      include card.pug
+
+.center.products__style-h2
+  h4#Napovyuvachi #{nap[0]['category']}  
+  .center.products__sell 
+      each val, index in nap
+        include card.pug
+
+// Catalog-flex-poz
+.center
+  .link-catalog__text
+    a.link-catalog__text(href='catalog')
+      img(src='../img/up-arrow.png' alt='' height='24px' width='24px' padding='24px')
+      |  Нагору
+
+
+
+// footer
+footer
+  .center
+    .footer
+      .footer__logo
+        // <img class="footer__logo" src="img/logob.png" alt="">
+        a(href='index')
+          p.footer__logo ЗооStore.
+      .footer__block
+        h4 Меню
+        .footer__downbar
+          a(href='index') Головна
+          a(href='catalog') Каталог
+          a(href='order') Кошик
+      .footer__block
+        h4 Контакти
+        .footer__downbar
+          a(href='#') +380-989-733-788
+          a(href='https://www.google.com/search?q=help%40interier.com&oq=help%40interier.com&aqs=chrome..69i57j69i58.714j0j7&sourceid=chrome&ie=UTF-8') grinpis01@gmail.com
+          .footer__block-links
+            a(href='https://www.facebook.com/')
+              img(src='../img/facebook.svg' alt='facebook')
+            a(href='https://www.instagram.com/')
+              img(src='../img/inst.svg' alt='instagram')
+            a(href='https://twitter.com/?lang=ru')
+              img(src='../img/twitter.svg' alt='twitter')
+      .footer__block.footer__button
+        p.footer__text-p Отримуйте наші новини та оновлення
+        input(type='email' placeholder='Введіть пошту')
+        button Підписатися
+// footer
+
+script(src='js/card.js')
+script(src='js/nav.js')
+script(src='js/button.js')
+script(src='js/order.js')
+script(src="https://kit.fontawesome.com/0748402994.js" crossorigin="anonymous")
+script(src='https://cdn.jsdelivr.net/npm/sweetalert2@8')
+

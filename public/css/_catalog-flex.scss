@@ -1,0 +1,17 @@
+.product-catalog{
+    display: flex;
+    gap: $gap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+}
+
+.product-catalog__items {
+    width: 378.6666666667px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+

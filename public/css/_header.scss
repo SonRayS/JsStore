@@ -1,0 +1,80 @@
+.top {
+    height: 735px;
+    background-image: url("../img/1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 64px;
+  }
+
+  .top-catalog {
+    background-image: url('../img/catalogbg.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    color: $color-text;
+    box-sizing: border-box;
+    margin-bottom: 64px;
+  }
+
+  .top-basket {
+    height: 400px;
+    background-image: url(../img/background-bas.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+  height: 76px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+
+  &__logo-text{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: $color-text;
+    
+  }
+
+  &__input{
+    width: 288px;
+    height: 41px;
+    border: 1px solid $color-text;
+    border-radius: 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-left: $gap;
+    padding-right: $gap;
+    outline: none;
+    font-size: 16px;
+    line-height: 20px;
+    color:$color-text;
+
+       &::placeholder{
+        color: $color-text;
+      }
+
+  }
+
+  nav{
+    line-height: 20px;
+    display: flex;
+    gap: $gap;
+  }  
+
+  
+
+
+}
+
+.phone__menu {
+  display: none;
+}

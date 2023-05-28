@@ -1,0 +1,131 @@
+
+footer{
+  background: #F7F6F6;
+  margin-top: 64px;
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: $gap;
+    padding-bottom: $gap;
+
+
+    &__logo{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        color: $color-text-black;
+      }
+
+
+      &__downbar {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;
+      }
+
+      &__downbar a{
+        display: flex;
+        margin-bottom: 12px;
+    }
+
+    &-block__links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    & h4{
+    
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: $color-text-black;
+      margin-bottom: 12px;
+    }
+
+    & button{
+        background: rgba(222, 215, 215, 0.41);
+        border: 1px solid $color-text;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 275px;
+        height: 46px;
+        font-size: 15px;
+        line-height: 18px;
+        color: $color-text-black;
+        margin-bottom: 53px;
+        margin-top: 12px;
+      }
+
+      & .footer__button{
+        display: grid;
+        justify-items: center;
+      }
+
+      & .footer__button button:hover{
+        background-color: $color-text-black;
+        color: $color-text;
+        border: 1px solid white;
+        font-size: 16px;
+      }
+
+      & .footer__button input:hover{
+        border: 1px solid black;
+      }
+    
+
+      & input{
+        box-sizing: border-box;
+        width: 275px;
+        height: 46px;
+        left: 1044px;
+        top: 3446px;
+        background: $color-text;
+        border: 1px solid #C4C4C4;
+        border-radius: 20px;
+        padding-left: 26px;
+        padding-right: 26px;
+        font-size: 15px;
+        outline: none;
+
+        &::placeholder{
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #C4C4C4;
+        }
+      }
+
+      
+
+      &__text-p{
+        font-size: 14px;
+        line-height: 16px;
+        color: $color-text-black;
+        margin-bottom: 16px;
+      }
+
+      &__block-links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    & a{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #888888;
+    }
+  }
+
+}
+

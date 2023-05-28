@@ -1,0 +1,125 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='css/style.css')
+  link(rel='icon' href='favicon.ico' type='images/x-icon')
+  title ЗооStore.
+  
+.top.center
+  // Head-top-menu
+  header
+    .header
+      a(href='index')
+        p.header__logo-text ЗооStore.
+      // <a href="index"><img class="phone__logo" src="img/logo.png" alt=""></a>
+      input.header__input(type='text' placeholder='Пошук')
+      nav
+        a.header__link(href='catalog') Каталог
+        a.header__link(href='order') Кошик
+    .phone
+      .phone__menu
+        a(href='index')
+          p.header__logo-text ЗооStore.
+        .phone__box
+          a(href='#')
+            img.phone__img(src='../img/f.png' alt='')
+          a(href='catalog')
+            img.phone__img(src='../img/fff.png' alt='')
+          a(href='order')
+            img.phone__img(src='../img/ff.png' alt='')
+  // Head-top-menu
+  // Head-under-text
+  section
+    .Under-text
+      h1.Under-text__H1 Все, чого заслуговує ваш улюбленець
+      p.Under-text__p Для пухнастих та пернатих друзів
+      a.Under-text__a.Under-text__catalog(href='catalog') Перейти до каталогу
+// Head-under-text
+button(class="show-nav" id="myBtn")
+  a(href='#' class='show-nav')
+    img(src='../img/chevron.png' alt='') 
+// Block-mebel
+section
+  .Mebel.center
+    h2.Mebel__style-h2 Все що треба для......
+    .Mebel__for
+      .Mebel__foto.Mebel__foto-0.Mebel__foto-big
+        a(href='catalog#FEED') КОРМ
+      .Mebel__foto.Mebel__foto-1.Mebel__foto-big
+        a(href='catalog#Sunbeds') ЛЕЖАКИ
+      .Mebel__foto.Mebel__foto-2
+        a(href='catalog#home') БУДИНОЧКИ
+      .Mebel__foto.Mebel__foto-3
+        a(href='catalog#play') ІГРАШКИ
+      .Mebel__foto.Mebel__foto-4
+        a(href='catalog#Napovyuvachi') НАПОВЮВАЧІ
+// Block-mebel
+// Special-sells
+
+include nav.pug
+
+.center.products__style-h2.Special-sell
+  h3 Товари
+.center
+
+.center.Mebel__style-h2  
+  .product-catalog.center 
+    each val, index in game
+      include card.pug
+
+.center.Mebel__style-h2  
+  .product-catalog.center 
+    each val, index in homes
+      include card.pug
+
+.center
+  .link-catalog__text
+    a.link-catalog__text(href='catalog')
+      |  Каталог
+
+// footer
+footer
+  .center
+    .footer
+      .footer__logo
+        // <img class="footer__logo" src="img/logob.png" alt="">
+        a(href='index')
+          p.footer__logo ЗооStore.
+      .footer__block
+        h4 Меню
+        .footer__downbar
+          a(href='index') Головна
+          a(href='catalog') Каталог
+          a(href='order') Кошик
+      .footer__block
+        h4 Контакти
+        .footer__downbar
+          a(href='#') +380-989-733-788
+          a(href='https://www.google.com/search?q=help%40interier.com&oq=help%40interier.com&aqs=chrome..69i57j69i58.714j0j7&sourceid=chrome&ie=UTF-8') grinpis01@gmail.com
+          .footer__block-links
+            a(href='https://www.facebook.com/')
+              img(src='../img/facebook.svg' alt='facebook')
+            a(href='https://www.instagram.com/')
+              img(src='../img/inst.svg' alt='instagram')
+            a(href='https://twitter.com/?lang=ru')
+              img(src='../img/twitter.svg' alt='twitter')
+      .footer__block.footer__button
+        p.footer__text-p Отримуйте наші новини та оновлення
+        input(type='email' placeholder='Введіть пошту')
+        button Підписатися
+// footer
+
+script(src='js/card.js')
+script(src='js/nav.js')
+script(src='js/button.js')
+script(src='js/order.js')
+script(src="https://kit.fontawesome.com/0748402994.js" crossorigin="anonymous")
+script(src='https://cdn.jsdelivr.net/npm/sweetalert2@8')

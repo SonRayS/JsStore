@@ -1,0 +1,28 @@
+.center
+    .products 
+        .product__sell
+            .product-catalog
+                .products__box
+                    a(href="goods?id="+val['id'])
+                        .products__box-img
+                        img(
+                            src='../img/'+val['image']
+                        )
+                        .H2-style
+                            p #{val["name"]}
+                        .text-p2  
+                            p #{val["description"]}
+                    .price__cost
+                        .price__cost    
+                            .price__cost-main
+                                p(class='text-center') #{val['cost']} &#x20B4
+                        .price__button    
+                            button(
+                                data-goods_id = val['id']
+                                class='button button-primary add-to-card'
+                            ) Купити
+
+
+
+                    
+                    
