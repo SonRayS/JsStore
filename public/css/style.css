@@ -791,7 +791,8 @@ ul.category-list a {
   margin-top: 12px;
 }
 
-.site-nav div, h3 {
+.site-nav div,
+h3 {
   margin-bottom: 16px;
 }
 
@@ -799,7 +800,7 @@ ul.category-list a {
   display: none;
   position: fixed;
   bottom: 20px;
-  left: 30px;
+  left: 256px;
   font-size: 18px;
   border: none;
   outline: none;
@@ -828,6 +829,33 @@ td.movion-total {
 
 a.show-nav:hover {
   background-color: rgba(0, 0, 0, 0);
+}
+
+.go-top {
+  position: fixed;
+  right: 256px;
+  top: 95%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+  border: none;
+  background-color: none;
+}
+
+.go-top button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.go-top button:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.go-top--show {
+  display: block;
 }
 
 @media (max-width: 1280px) {
@@ -2105,10 +2133,6 @@ header {
   animation: text-focus-in 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.link-catalog__text:hover {
-  animation: scale-up-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
 .footer__block:hover {
   transform: scale(1.1);
   transition: all 0.1s;
@@ -2140,7 +2164,8 @@ header {
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 button:hover {

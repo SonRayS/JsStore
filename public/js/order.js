@@ -26,7 +26,7 @@ document.querySelector('#lite-shop-order').onsubmit = function (event) {
         });
         return false;
     }
-    
+
 
     fetch('/finish-order', {
         method: 'POST',
@@ -42,25 +42,25 @@ document.querySelector('#lite-shop-order').onsubmit = function (event) {
             'Content-Type': 'application/json'
         }
     })
-    .then(function (response) {
-        return response.text();
-    })
-    .then(function (body) {
-        if (body == 1) {
-            Swal.fire({
-                title: 'Готово',
-                text: 'ок',
-                type: 'info',
-                confirmButtonText: 'ОК'
-            });
-        }
-        else {
-            Swal.fire({
-                title: 'Помилка відправки',
-                text: 'Помилка !',
-                type: 'помилка',
-                confirmButtonText: 'ОК'
-            });
-        }
-    })
+        .then(function (response) {
+            return response.text();
+        })
+        .then(function (body) {
+            if (body == 1) {
+                Swal.fire({
+                    title: 'Готово',
+                    text: 'ок',
+                    type: 'info',
+                    confirmButtonText: 'ОК'
+                });
+            }
+            else {
+                Swal.fire({
+                    title: 'Помилка відправки',
+                    text: 'Помилка !',
+                    type: 'помилка',
+                    confirmButtonText: 'ОК'
+                });
+            }
+        })
 }

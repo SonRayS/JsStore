@@ -1,4 +1,4 @@
-.site-nav{
+.site-nav {
     width: 400px;
     min-height: 100vh;
     position: fixed;
@@ -12,42 +12,42 @@
     opacity: 0.9;
 }
 
-.console-button-div{
+.console-button-div {
     text-align: right;
     border: 0px;
 }
 
 
-.show-nav{
+.show-nav {
     position: relative;
 }
 
-ul.category-list{
+ul.category-list {
     list-style-type: disc;
 }
 
-ul.category-list a{
+ul.category-list a {
     color: #ffff;
     font-size: 16px;
 }
 
-.button-primary-outlined img{
+.button-primary-outlined img {
     background-color: rgb(8, 8, 8);
     height: 64px;
     width: 64px;
 }
 
-.show-nav img{
-    background: rgba(0, 0, 0, 0); 
+.show-nav img {
+    background: rgba(0, 0, 0, 0);
     height: 64px;
-    width: 64px;    
+    width: 64px;
 }
 
-.show-nav{
-    background: rgba(0, 0, 0, 0); 
+.show-nav {
+    background: rgba(0, 0, 0, 0);
     border: 0px;
     margin-left: 32px;
-  }
+}
 
 .close-button-div {
     display: flex;
@@ -57,15 +57,15 @@ ul.category-list a{
     margin: 16px;
 }
 
-.cart-header{
+.cart-header {
     margin-left: $gap;
 }
 
-.text-right{
+.text-right {
     margin-left: $gap;
 }
 
-.text-right button{
+.text-right button {
     background: #ffff;
     border: 1px solid aqua;
     box-sizing: border-box;
@@ -79,7 +79,8 @@ ul.category-list a{
     margin-top: 12px;
 }
 
-.site-nav div,h3{
+.site-nav div,
+h3 {
     margin-bottom: 16px;
 }
 
@@ -87,32 +88,60 @@ ul.category-list a{
     display: none;
     position: fixed;
     bottom: 20px;
-    left: 30px;
+    left: 256px;
     font-size: 18px;
     border: none;
     outline: none;
     cursor: pointer;
-  }
-
-p.movions{
-    padding-top: 16px;
 }
-td.movion{
+
+p.movions {
     padding-top: 16px;
 }
 
-td.movion-total{
+td.movion {
+    padding-top: 16px;
+}
+
+td.movion-total {
     padding-top: 64px;
 }
 
-.show-nav:hover{
+.show-nav:hover {
     background-color: opacify($color: #00000000, $amount: 0);
 }
 
-#myBtn:hover{
+#myBtn:hover {
     background-color: opacify($color: #00000000, $amount: 0);
-  }
+}
 
-a.show-nav:hover{
+a.show-nav:hover {
     background-color: opacify($color: #00000000, $amount: 0);
+}
+
+.go-top {
+    position: fixed;
+    right: 256px;
+    top: 95%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    border: none;
+    background-color: none;
+}
+
+.go-top button {
+    background-color: opacify($color: #00000000, $amount: 0);
+    border: none;
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.go-top button:hover {
+    background-color: opacify($color: #00000000, $amount: 0);
+}
+
+.go-top--show {
+    display: block;
 }
