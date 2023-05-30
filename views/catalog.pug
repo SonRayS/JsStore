@@ -27,31 +27,30 @@ include head.pug
   // Head-under-text
   section
     .Under-text
-      h1.Under-text__H1 &Kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy;
+      h1.Under-text__H1 Каталог
 // Head-under-text
 // Catalog-menu
 .block.center
   div
     ul.block-pack__ul
-      a.block-pack__li(href='index') &Gcy;&ocy;&lcy;&ocy;&vcy;&ncy;&acy;
-      a.block-pack__li(href='catalog') &Kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy; &tcy;&ocy;&vcy;&acy;&rcy;&iukcy;&vcy;
-  .menu-drop
-    ul.menu-drop__ul
-      li.menu-drop__list
-        a.menu-drop__a.menu-drop__cost(href='#')
-          p &Scy;&ocy;&rcy;&tcy;&ucy;&vcy;&acy;&tcy;&icy; &zcy;&acy; :
-        img.menu-drop__img(src='../img/Polygon1.png' alt='')
-        ul.menu-drop__box
-          li
-            a.menu-drop__cost.menu-drop__cost-1(href='#') &Pcy;&ocy;&rcy;&yacy;&dcy;&ocy;&kcy;: &scy;&pcy;&iecy;&rcy;&shcy;&ucy; &ncy;&ocy;&vcy;&iukcy;
-          li
-            a.menu-drop__cost.menu-drop__cost-2(href='#') &Pcy;&ocy;&rcy;&yacy;&dcy;&ocy;&kcy;: &scy;&pcy;&iecy;&rcy;&shcy;&ucy; &zcy;&ncy;&icy;&zhcy;&kcy;&icy;
-          li
-            a.menu-drop__cost.menu-drop__cost-3(href='#') &Pcy;&ocy;&rcy;&yacy;&dcy;&ocy;&kcy;: &scy;&pcy;&iecy;&rcy;&shcy;&ucy; &dcy;&iecy;&shcy;&iecy;&vcy;&iukcy;
-          li
-            a.menu-drop__cost.menu-drop__cost-4(href='#') &Pcy;&ocy;&rcy;&yacy;&dcy;&ocy;&kcy;: &scy;&pcy;&iecy;&rcy;&shcy;&ucy; &pcy;&ocy;&pcy;&ucy;&lcy;&yacy;&rcy;&ncy;&iukcy;
-  
+      a.block-pack__li(href='index') Головна 
+      a.block-pack__li(href='catalog') Каталог товарів
+
+button.testbutton#sort-asc
+
+.menu-drop
+  ul.menu-drop__ul
+    li.menu-drop__list
+      a.menu-drop__a.menu-drop__cost(href='#')
+        p Сортувати за :
+      img.menu-drop__img(src='../img/Polygon1.png' alt='')
+      ul.menu-drop__box
+        li
+          a#sort-asc.menu-drop__cost.menu-drop__cost-1(href='#') Спочатку : дешеві
+        li
+          a.menu-drop__cost.menu-drop__cost-4(href='#') Спочатку : дорогі
 include nav.pug
+
 
 // Catalog-menu     
 .center.Mebel__style-h2

@@ -112,6 +112,12 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.testbutton {
+  background-color: black;
+  height: 32px;
+  width: 320px;
+}
+
 .top {
   height: 735px;
   background-image: url("../img/1.png");
@@ -262,7 +268,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .menu-drop__ul:hover .menu-drop__box {
   opacity: 1;
-  padding-top: 280px;
+  padding-top: 180px;
 }
 .menu-drop__ul li:first-child .menu-drop__cost-1 {
   border-radius: 10px 10px 0 0;
