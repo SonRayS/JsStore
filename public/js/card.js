@@ -57,10 +57,10 @@ function showCard(data) {
   out += '</tbody></table>';
   document.querySelector('#card-nav').innerHTML = out;
   document.querySelectorAll('.cart-minus').forEach(function (element) {
-    element.onclick = cardMinus;
+    element.onclick = cardMinus
   });
   document.querySelectorAll('.cart-plus').forEach(function (element) {
-    element.onclick = cardPlus;
+    element.onclick = cardPlus
   });
 }
 

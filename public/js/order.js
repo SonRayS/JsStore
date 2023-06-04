@@ -1,4 +1,4 @@
-document.querySelector('#lite-shop-order').onsubmit = function (event) {
+document.querySelector('#Shop-order').onsubmit = function (event) {
     event.preventDefault();
     let username = document.querySelector('#username').value.trim();
     let phone = document.querySelector('#phone').value.trim();

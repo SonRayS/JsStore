@@ -9,7 +9,7 @@ app.set('view engine', 'pug');
 let mysql = require('mysql');
 
 app.use(express.json());
-const nodemailer = require('nodemailer')
+const nodemailer = require('nodemailer');
 
 let con = mysql.createConnection({
   host: 'localhost',
