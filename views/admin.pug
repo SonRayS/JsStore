@@ -1,0 +1,50 @@
+include head.pug
+
+.Admin.center
+  // Head-top-menu
+  header
+  
+    .header
+      a(href='index')
+        p.header__logo-text ЗооStore.
+      // <a href="index"><img class="phone__logo" src="img/logo.png" alt=""></a>
+      div.wrapper
+       form.form
+        input.header__input(type='text' class="search" placeholder='Пошук')
+        ul.options
+      nav
+        a.header__link(href='catalog') Каталог
+        a.header__link(href='order') Кошик
+    .phone
+      .phone__menu
+        a(href='index')
+          p.header__logo-text ЗооStore.
+        .phone__box
+          a(href='#')
+            img.phone__img(src='../img/f.png' alt='')
+          a(href='catalog')
+            img.phone__img(src='../img/fff.png' alt='')
+          a(href='order')
+            img.phone__img(src='../img/ff.png' alt='')
+  // Head-top-menu
+  // Head-under-text
+  section
+    .Under-text
+      h1.Under-text__H1 Адмін панель
+// Head-under-text
+.Admin-panel.center
+    ul 
+        li 
+            a(href="/admin-order") Order 
+        li 
+            a(href="/admin-goods") Goods 
+            
+
+
+
+
+
+
+
+include footer.pug
+include script.pug

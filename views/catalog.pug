@@ -8,7 +8,10 @@ include head.pug
       a(href='index')
         p.header__logo-text ЗооStore.
       // <a href="index"><img class="phone__logo" src="img/logo.png" alt=""></a>
-      input.header__input(type='text' placeholder='Пошук')
+      div.wrapper
+       form.form
+        input.header__input(type='text' class="search" placeholder='Пошук')
+        ul.options
       nav
         a.header__link(href='catalog') Каталог
         a.header__link(href='order') Кошик
@@ -36,21 +39,18 @@ include head.pug
       a.block-pack__li(href='index') Головна 
       a.block-pack__li(href='catalog') Каталог товарів
 
-button.testbutton#sort-asc
-
-.menu-drop
-  ul.menu-drop__ul
-    li.menu-drop__list
-      a.menu-drop__a.menu-drop__cost(href='#')
-        p Сортувати за :
-      img.menu-drop__img(src='../img/Polygon1.png' alt='')
-      ul.menu-drop__box
-        li
-          a#sort-asc.menu-drop__cost.menu-drop__cost-1(href='#') Спочатку : дешеві
-        li
-          a.menu-drop__cost.menu-drop__cost-4(href='#') Спочатку : дорогі
+  .menu-drop
+    ul.menu-drop__ul
+      li.menu-drop__list
+        a.menu-drop__a.menu-drop__cost(href='#')
+          p Сортувати за :
+        img.menu-drop__img(src='../img/Polygon1.png' alt='')
+        ul.menu-drop__box
+          li
+            a#sort-asc.menu-drop__cost.menu-drop__cost-1(href='#') Спочатку : дешеві
+          li
+            a.menu-drop__cost.menu-drop__cost-4(href='#') Спочатку : дорогі
 include nav.pug
-
 
 // Catalog-menu     
 .center.Mebel__style-h2

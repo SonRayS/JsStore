@@ -7,7 +7,10 @@ include head.pug
       a(href='index')
         p.header__logo-text ЗооStore.
       // <a href="index"><img class="phone__logo" src="img/logo.png" alt=""></a>
-      input.header__input(type='text' placeholder='Пошук')
+      div.wrapper
+       form.form
+        input.header__input(type='text' class="search" placeholder='Пошук')
+        ul.options
       nav
         a.header__link(href='catalog') Каталог
         a.header__link(href='order') Кошик

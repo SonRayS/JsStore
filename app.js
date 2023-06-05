@@ -18,8 +18,8 @@ let con = mysql.createConnection({
   database: 'market'
 });
 
-con.connect(function (err) {
-  if (err) throw err;
+con.connect(function (error) {
+  if (error) throw error;
   console.log("Connected!");
 });
 
@@ -29,6 +29,7 @@ process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0; //off search autoriz
 app.listen(3000, function () {
   console.log('node express work on 3000');
 });
+
 
 function getGoodsByCategory(category) {
   return new Promise(function (resolve, reject) {
@@ -71,6 +72,34 @@ app.get('/catalog', function (req, res) {
   });
 });
 
+app.get('/admin', function (req, res) {
+  console.log('load /admin');
+  res.render('admin', {
+  });
+});
+
+app.get('/admin-order', function (req, res) {
+  console.log('load /admin');
+  con.query(`SELECT 
+	shop_order.id as id,
+	shop_order.user_id as user_id,
+    shop_order.goods_id as goods_id,
+    shop_order.goods_cost as goods_cost,
+    shop_order.goods_amount as goods_amount,
+    shop_order.total as total,
+    from_unixtime(date,"%Y-%m-%d %h:%m") as human_date,
+    user_info.user_name as user,
+    user_info.user_phone as phone,
+    user_info.address as address
+FROM 
+	shop_order
+LEFT JOIN 
+	user_info
+ON shop_order.user_id = user_info.id ORDER BY id DESC`, function (error, result, fields) {
+    if (error) throw error;
+    res.render('admin-order', { order: JSON.parse(JSON.stringify(result)) });
+  });
+});
 
 app.get('/index', function (req, res) {
   console.log(req.query.id);
@@ -113,7 +142,6 @@ app.get('/goods', function (req, res) {
     res.render('goods', { goods: JSON.parse(JSON.stringify(result)) });
   });
 });
-
 
 app.post('/get-goods-info', function (req, res) {
   console.log(req.body.key);
@@ -196,7 +224,7 @@ async function sendMail(data, result) {
   let transporter = nodemailer.createTransport({
     host: "smtp.ethereal.email",
     port: 587,
-    secure: false, 
+    secure: false,
     auth: {
       user: testAccount.user,
       pass: testAccount.pass

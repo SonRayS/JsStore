@@ -1,0 +1,20 @@
+.Admin {
+    background-color: black;
+    padding-bottom: 64px;
+
+    &-panel {
+        padding-top: $gap;
+    }
+
+    &-panel ul {
+        list-style-type: none;
+    }
+
+    &-panel li {
+        color: black;
+        font-size: 24px;
+        background-color: black;
+        text-decoration: none;
+        padding: 32px;
+    }
+}

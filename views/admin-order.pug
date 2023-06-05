@@ -1,0 +1,31 @@
+div.table-point
+ <table border="2" cellspacing="1" cellpadding="10">
+  tr     
+   th id
+   th Дата
+   th id Користувача 
+   th id Товару
+   th Ціна товару
+   th К-сть Товару
+   th Усього
+   th Користувач
+   th Телефон
+   th Адреса
+  each val,index in order
+   tr 
+    td #{val['id']}
+    td #{val['human_date']}
+    td #{val['user_id']}
+    td #{val['goods_id']}
+    td #{val['goods_cost']} ₴
+    td #{val['goods_amount']}
+    td #{val['total']} ₴
+    td #{val['user']}
+    td #{val['phone']}
+    td #{val['address']}
+   
+            
+            
+            
+         
+            
