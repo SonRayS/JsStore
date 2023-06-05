@@ -704,6 +704,37 @@ nav {
   padding: 32px;
 }
 
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  margin: 32px;
+}
+
+.admin-form input {
+  background: rgba(255, 255, 255, 0.41);
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 275px;
+  height: 46px;
+  font-size: 18px;
+  line-height: 18px;
+  color: black;
+  margin-top: 12px;
+  outline: none;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.admin-form label {
+  color: black;
+  font-size: 22px;
+}
+
 .site-nav {
   width: 400px;
   min-height: 100vh;

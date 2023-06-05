@@ -1,6 +1,4 @@
 include head.pug
-
-
 .Admin.center
   // Head-top-menu
   header
@@ -31,21 +29,23 @@ include head.pug
   // Head-under-text
   section
     .Under-text
-      h1.Under-text__H1 Адмін панель
+      h1.Under-text__H1 Авторизація
 // Head-under-text
-.Admin-panel.center
-    ul 
-        li 
-            a(href="/admin-order") Order 
-        li 
-            a(href="/admin-goods") Goods 
-            
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.center
+    form(action="/login", method="POST")
+        .admin-form
+            label login 
+            input(name="login", value="admin", id="login")
+        .admin-form    
+            label password
+            input(type="password", name="password", value="123", id="password")
+        .admin-form
+            input(type="submit", value="login")
 
 
-
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+script(src="js/login.js") 
 include footer.pug
-include script.pug

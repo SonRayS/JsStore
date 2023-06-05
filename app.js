@@ -78,6 +78,17 @@ app.get('/admin', function (req, res) {
   });
 });
 
+app.post('/login', function (req, res) {
+  res.end('work');
+});
+
+app.get('/login', function (req, res) {
+  console.log('load /login');
+  res.render('login', {
+  });
+});
+
+
 app.get('/admin-order', function (req, res) {
   console.log('load /admin');
   con.query(`SELECT 
