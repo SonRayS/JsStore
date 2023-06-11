@@ -263,9 +263,6 @@ input[type=number]::-webkit-inner-spin-button {
   border-bottom: 0.1px solid #C4C4C4;
   width: 248px;
 }
-.menu-drop__box:active {
-  display: none;
-}
 .menu-drop__ul:hover .menu-drop__box {
   opacity: 1;
   padding-top: 180px;

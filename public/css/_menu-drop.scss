@@ -49,10 +49,6 @@
     width: 248px;
   }
 
-  &__box:active {
-    display: none;
-  }
-
   &__ul:hover &__box {
     opacity: 1;
     padding-top: 180px;

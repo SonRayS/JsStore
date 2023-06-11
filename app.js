@@ -53,8 +53,6 @@ function getGoodsByCategory(category, orderBy) {
   });
 }
 
-
-
 app.get('/catalog', function (req, res) {
   console.log('load /catalog');
   console.log("Connected!");
@@ -96,7 +94,6 @@ app.get('/login', function (req, res) {
   res.render('login', {
   });
 });
-
 
 app.get('/admin-order', function (req, res) {
   console.log('load /admin');
