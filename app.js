@@ -27,13 +27,19 @@ process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0; //off search autoriz
 
 
 app.listen(3000, function () {
-  console.log('node express work on 3000');
+  console.log('node express work on 80');
 });
 
-
-function getGoodsByCategory(category) {
+function getGoodsByCategory(category, orderBy) {
   return new Promise(function (resolve, reject) {
-    con.query(`SELECT * FROM goods WHERE category = '${category}'`,
+    let orderByString = ""
+    if (orderBy === "ASC") {
+      orderByString = "ORDER BY cost"
+    }
+    if (orderBy === "DESC") {
+      orderByString = "ORDER BY cost DESC"
+    }
+    con.query(`SELECT * FROM goods WHERE category = '${category}' ${orderByString}`,
       function (error, result) {
         if (error) reject(error);
         resolve(result);
@@ -47,19 +53,22 @@ function getGoodsByCategory(category) {
   });
 }
 
+
+
 app.get('/catalog', function (req, res) {
   console.log('load /catalog');
   console.log("Connected!");
+  const orderBy = req.query.orderBy
 
-  let nap = getGoodsByCategory('Наповнювачі');
+  let nap = getGoodsByCategory('Наповнювачі', orderBy);
 
-  let korm = getGoodsByCategory('Корм');
+  let korm = getGoodsByCategory('Корм', orderBy);
 
-  let game = getGoodsByCategory('Іграшки');
+  let game = getGoodsByCategory('Іграшки', orderBy);
 
-  let homes = getGoodsByCategory('Будиночки');
+  let homes = getGoodsByCategory('Будиночки', orderBy);
 
-  let bed = getGoodsByCategory('Лежаки');
+  let bed = getGoodsByCategory('Лежаки', orderBy);
 
   Promise.all([nap, korm, game, homes, bed]).then(function (value) {
     res.render('catalog', {

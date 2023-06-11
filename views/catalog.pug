@@ -39,17 +39,19 @@ include head.pug
       a.block-pack__li(href='index') Головна 
       a.block-pack__li(href='catalog') Каталог товарів
 
+
   .menu-drop
     ul.menu-drop__ul
       li.menu-drop__list
-        a.menu-drop__a.menu-drop__cost(href='#')
+        a.menu-drop__a.menu-drop__cost(href='/catalog?orderBy=ASC')
           p Сортувати за :
         img.menu-drop__img(src='../img/Polygon1.png' alt='')
         ul.menu-drop__box
           li
-            a#sort-asc.menu-drop__cost.menu-drop__cost-1(href='#') Спочатку : дешеві
+            a#sort-asc.menu-drop__cost.menu-drop__cost-1(href='/catalog?orderBy=ASC') Спочатку : дешеві
           li
-            a.menu-drop__cost.menu-drop__cost-4(href='#') Спочатку : дорогі
+            a.menu-drop__cost.menu-drop__cost-4(href='/catalog?orderBy=ASC') Спочатку : дорогі
+          
 include nav.pug
 
 // Catalog-menu     

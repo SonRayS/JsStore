@@ -686,6 +686,15 @@ nav {
   animation: jello-horizontal 2s both;
 }
 
+.sort_button {
+  box-sizing: border-box;
+  width: 75px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: white;
+}
+
 .Admin {
   background-color: black;
   padding-bottom: 64px;
