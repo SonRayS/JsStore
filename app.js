@@ -46,7 +46,7 @@ function getGoodsByCategory(category, orderBy) {
 
         let user = {};
         for (let i = 0; i < result.length; i++) {
-          user[result[i]['id']] = result[i];
+          user[result[i]['id']] = result[i]; 
         }
         console.log(JSON.parse(JSON.stringify(user)))
       });
